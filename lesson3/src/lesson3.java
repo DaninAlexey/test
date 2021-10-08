@@ -10,14 +10,14 @@ public class lesson3 {
 //        ThirddzRun();
 //        FourthdzRun(12)
 //        int[] arr = FifthdzRun(12, 98);
-//        int[] arr = {-3, -7, -2, 0, -4, -16};
+          int[] arr = {-3, -7, -2, 0, -4, -16};
 //        SixthdzRun(arr);
 //        boolean res;
 //        res = SeventhdzAllRun(arr);
 //        res = SeventhdzPolRun(arr);
 //        System.out.println(res);
-//        arr = EighthdzRun(arr, -9);
-//        System.out.println(Arrays.toString(arr));
+       EighthdzRun(arr, 1);
+       System.out.println(Arrays.toString(arr));
     }
 
     public static void FirstdzRun() {
@@ -124,7 +124,7 @@ public class lesson3 {
     }
 
 
-    public static int[] EighthdzRun(int[] arr, int n) {
+    public static void EighthdzRun(int[] arr, int n) {
         // На случай когда сдигаем на большее число позиций чем длина массива
         n %= arr.length;
         // Дальше избавляемся от отрицательных значений n
@@ -148,7 +148,6 @@ public class lesson3 {
                     arr[j - 1] = arr[j];
                 arr[arr.length - 1] = temp;
             }
-        return arr;
     }
 
 }
